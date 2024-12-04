@@ -1,0 +1,58 @@
+<head>
+    <script>
+        class Year extends HTMLElement{
+            connectedCallback(){
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("x-year", Year);
+    </script>
+</head>
+
+<style>
+    header{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color:#f199bf
+    }
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color:#eae6db;
+    }
+    footer{
+        background-color:#baa791;
+    }
+</style>
+
+<header>
+    <h1>Christmas Festival</h1>
+    <h3>Course</h3>
+    <p>UX211, Graphic Design Studio</p>
+    <h3>Project Outline</h3>
+    <p>Design a promo package for an upcoming Christmas Festival.</p>
+    <h3>We needed to include the following information:</h3>
+    <ul>
+        <li>Festival Name</li>
+        <li>Date and Time</li>
+        <li>Slogan</li>
+        <li>Keynotes events</li>
+    </ul>
+</header>
+
+<body>
+    <h2>Posters</h2>
+        <img class="activator" src="img/christmasposters.png"
+        width="600"
+        height="400">
+    <h2>Sticker</h2>
+        <img class="activator" src="img/sticker.png"
+        width="300"
+        height="300">
+    <h2>Instagram Posts</h2>
+        <img class="activator" src="img/insta.png"
+        width="500"
+        height="500">
+</body>
+
+<footer>
+    &copy; Kaya Kanashiro <x-year></x-year>
+</footer>

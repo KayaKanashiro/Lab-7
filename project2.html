@@ -1,0 +1,91 @@
+<head>
+    <script>
+        class Year extends HTMLElement{
+            connectedCallback(){
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("x-year", Year);
+    </script>
+</head>
+
+<style>
+    header{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color:mistyrose
+    }
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color:snow;
+    }
+    footer{
+        background-color:lemonchiffon;
+    }
+</style>
+
+<header>
+    <h1>Fridge Monitor</h1>
+    <h3>Course</h3>
+    <p>UX201, Maker Lab I</p>
+    <h3>Project Outline</h3>
+    <p>Within a group, design a physical product that addresses a social issue of concern.</p>
+    <h3>Group Members</h3>
+    <ul>
+        <li>Khaled Bleibleh</li>
+        <li>Jasmine Gill</li>
+        <li>Angelina Janicas</li>
+        <li><b><i>Kaya Kanashiro</i></b></li>
+</header>
+
+
+<body>
+    <h2>Project Overview</h2>
+    <p>The fridge monitor is an innovative and sustainable solution to household food waste. The fridge monitor is a system that combines user-friendly technology and environmental awareness to reduce waste, promote sustainable food consumption, and help users save money.
+
+        The monitor will utilize a scanning system placed on the fridge's exterior, allowing users to track the expiration dates of stored items. An integrated recipe feature will provide meal suggestions based on available ingredients, reducing the likelihood of spoilage.
+        </p>
+    <h2>Project Aim and Objectives</h2>
+    <p>Design and develop a novel, user-friendly refrigerator monitoring system that reduces food waste by encouraging the principles of consuming green, simplifies household food management and makes cooking and shopping more pleasant.
+    </p>
+    <ul>
+        <li><b>Reduce Food Waste:</b>
+            By designing a scanning system to monitor the expiration dates of stored food items. It’ll provide timely reminders and alerts so that items are consumed before they spoil.
+            </li>
+        <li><b>Simplify Food Management:</b>
+            It’ll provide an intuitive interface to let users easily manage, track, and keep their refrigerator's contents up to date.
+            </li>
+        <li><b>Improved Efficiency in Grocery Shopping:</b>
+            We will add a digital inventory feature that will enable users to check the fridge contents remotely, which will make grocery shopping easier by showing what they need or what is missing. This will be done through an app that syncs with the fridge monitor.
+            </li>
+        <li>
+            <b>Support Sustainable Consumption:</b>
+            enables environmentally responsible habits by encouraging users to eat food that will spoil soon, ultimately reducing food wastage. This also results in developing thoughtful grocery purchase decisions with the knowledge of when foods will spoil the quickest.
+        </li>
+        <li><b>Help with Cooking Decisions:</b>
+            Our app introduces a recipe suggestion feature in which the available ingredients are used to suggest meal ideas, thereby making cooking more convenient and enjoyable.
+            </li>
+        <li><b>Cost Savings:</b>
+            It will help users save money by minimizing food spoilage and preventing over-purchasing items not needed. In this time of inflation and economic difficulty, it will help households manage their monthly finances by decreasing food wastage.
+            </li>
+    </ul>
+
+    <h2>Social Issue of Concern</h2>
+    <p>Our project focuses on food waste and food management. We aim to decrease food waste by educating people quickly and efficiently. By having a scanner that automatically tracks food expiration dates we can help households track what should be eaten soon. In Canada, one of the main causes of food waste is buying too much food that spoils before it is eaten or sold. With a scanner that syncs with a person's mobile device, they can easily track and manage what foods they currently have. In Toronto “50 percent of food wasted in … single-family households” (City of Toronto)  this can be avoided with the help of our device. Another feature that will help reduce food waste is notifying a person when a food is close to expiring, this way they know that it should be eaten soon.</p>
+    
+    
+    
+    
+    <h2>Physical Prototypes</h2>
+        <img class="activator" src="img/fridge.png"
+        width="1200"
+        height="600">
+    <h2>UI of Fridge Monitor</h2>
+        <img class="activator" src="img/charlie.png"
+        width="800"
+        height="800">
+</body>
+
+<footer>
+    &copy; Kaya Kanashiro <x-year></x-year>
+</footer>
+

@@ -1,0 +1,120 @@
+<head>
+    <script>
+        class Year extends HTMLElement{
+            connectedCallback(){
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("x-year", Year);
+    </script>
+</head>
+
+<style>
+    header{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color:lightcoral
+    }
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color:floralwhite
+    }
+    footer{
+        background-color:lightblue;
+    }
+</style>
+
+<header>
+    <h1>Automated Pill Box</h1>
+    <h3>Course</h3>
+        <p>UX201, Maker Lab I</p>
+    <h3>Project Outline</h3>
+        <p>Within a group, "hack" a box into a new innovative design.</p>
+    <h3>Group Members</h3>
+        <ul>
+            <li>Khaled Bleibleh</li>
+            <li>Jasmine Gill</li>
+            <li>Angelina Janicas</li>
+            <li><b><i>Kaya Kanashiro</i></b></li>
+        </ul>
+
+</header>
+
+
+<body>
+    <h2>Project Overview</h2>
+    <p>For this project, we have chosen to design an accessible pill box that focuses on better medication management for users with diverse needs. Our main focus is on elderly people who may struggle with memory or motor issues. Our box includes features like automatically dropping pills and reminders to encourage people to take their medication. Although we are currently unable to make these features in our prototype these are the ultimate goals of our box. We want to enhance users' experience with taking their medication on time with the proper dosage. By implementing these features it will result in a more seamless experience for users and ensure that they live a healthier life.
+        </p>
+    <h2>Project Aim and Objectives</h2>
+    <ol>
+        <li><b>Easy to Read</b></li>
+            <ol>
+                <li>
+                    <b>Big Text & Bold Colors:</b> We know that as people age, their eyesight can start to decline. So, we want to make everything on the pill box super easy to read by using large text and bold, high-contrast colours. Our design ensures essential information, such as medication names and dosing instructions, remains easily legible.
+                </li>
+                <li>
+                    <b>Simple Icons:</b> To make things even clearer, we’ll add straightforward icons next to the text. These visuals will make it easy for users to understand what each section is for, even if they don’t read every word.</li>
+            </ol>
+        <li><b>Simple to Use</b></li>
+            <ol>
+                <li>
+                    <b>Easy Design & Clear Instructions:</b> To support users with cognitive disabilities, we will create clear, straightforward instructions on how to operate the pill box. This could include a user-friendly booklet and an instructional video, ensuring that all users can understand and effectively use the box.
+                </li>
+                <li>
+                    <b>Support if Needed:</b> To help users feel comfortable, we’ll include a basic guide that shows how to use everything in the box. We’ll also make a quick video explaining all the key features, like setting reminders, opening compartments, and checking if they’ve taken a dose.
+                </li>
+            </ol>
+        <li><b>Improve Daily Life</b></li>
+            <ol>
+                <li>
+                    <b>Making Medication Routines Simple:</b> Our goal is to make taking medication less of a hassle and more of a regular, easy routine. With reminders and easy-access compartments, the box will help users keep up with their meds and feel healthier. By simplifying the medication process, the box is designed to promote healthier outcomes and empower elderly individuals to maintain their independence.
+                </li>
+                <li>
+                    <b>Promote Medication Adherence:</b> The box will contain automated reminders playing through the speakers. It will play sounds or alerts prompting users to take their medication when it’s time. This feature helps with common challenges, particularly for individuals with cognitive impairments. 
+                </li>
+            </ol>
+        <li><b>Modern Spin on the Classic Pill Box:</b></li>
+            <ol>
+                <li>
+                    <b>A Fresh Take on a Familiar Tool: </b>We’re keeping the familiar pillbox shape, but adding useful new features like reminders and automatic pill dispensing. This gives users something they recognize with a bit of a tech boost to make it even more helpful.
+                </li>
+            </ol>
+    </ol>
+
+
+    <h2>Hacking The Uses of an Everyday Box</h2>
+        <p>We took the classic pill box and transformed it to better meet the needs for accessibility using modern-day technology.</p>
+         <p>With a traditional pill box, there are slots for each day of the week. 
+            The user would have to manually take out the pills everyday and refill the box at the end of the week.
+            With this traditional design users tend to forget to take their medication or refill their pill box each week. </p>
+         <p>There is no feature for notification, the user would have to rely on their own memory and schedule to remember to take their medications. 
+            This can prove to be an issue for elderly people due to the natural decline of memory and motor skills that come along with aging.
+            For our new design the main feature we created in order to “hack” the traditional pill box was the addition of an automated pill dispensing system with notification as to when the pills needed to be taken or refilled.
+            </p>
+        <p>We added a speaker and screen to the pill box to allow for audible and visual ques to make it more accessible for users. 
+            The speaker would sound when the pills needed to be taken, and the screen would display the notification as when the pills were dispensed, the time, and the date.
+            There is up to seven different slot compartments that the user would fill up with each medications they needed to take.
+            Then the user would be able to customize their pill combinations for each day of the week and the times at which they would like their medication to be dispensed. 
+            </p> 
+        <p>The system is also able to track and records how frequently the users take their pills as well as the type of medication they have been taking over a period of time. 
+            The user would be able to view this data on the screen or the app synced to the automated pill box.
+            Another feature we added to the box is a weight sensor on the plate where the pills would be dispensed.
+            This feature allows the pill box to know if the medication has been taken or not. 
+            And if it the user has not taken the pills from the plate, the box will give audible notification every 15 minutes until the pills have been taken. 
+            </p>
+        <p>All in all, this automated pill dispensing system allows for real-time notification and tracking for users to stay on top of their medication management. 
+            This “hacked” design on the traditional pill box that we’ve created is much more accessible, user-friendly, and makes medication management a simpler task to complete
+            </p>
+    
+    <h2>Sketched Design</h2>
+        <img class="activator" src="img/brainstorm.png"
+        width="1500"
+        height="600">
+    <h2>Physical Prototype</h2>
+        <img class="activator" src="img/three.png"
+        width="1500"
+        height="600">
+</body>
+
+<footer>
+    &copy; Kaya Kanashiro <x-year></x-year>
+</footer>

@@ -1,0 +1,75 @@
+<head>
+    <script>
+        class Year extends HTMLElement{
+            connectedCallback(){
+                this.innerHTML = new Date().getFullYear();
+            }
+        }
+        customElements.define("x-year", Year);
+    </script>
+</head>
+
+<style>
+    header{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color:aliceblue
+    }
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color:lavenderblush;
+    }
+    footer{
+        background-color:aliceblue;
+    }
+</style>
+
+<header>
+    <h1>About Me</h1>
+    <h3>A little bit about me</h3>
+        <p>Hi there, my name is Kaya Kanashiro, and I am a second-year User Experience Design student at Wilfrid Laurier University. 
+            Design intrigues me as I enjoy problem-solving and tuning into my creative abilities. I value creating innovative solutions to life's compelling challenges.</p>
+    </ul>
+</header>
+
+<body>
+    <h3>My hobbies</h3>
+    <ul>
+        <li>Singing</li>
+        <li>Acting</li>
+        <li>Playing Guitar</li>
+        <li>Reading</li>
+        <li>Photography</li>
+        <li>Exploring</li>
+        <li>Eating yummy food</li>
+    </ul>
+    <h2>Some pictures of my life!</h2>
+        <h3>Singing & Guitar</h3>
+        <img class="activator" src="img/Singing.png"
+        width="400"
+        height="400">
+        <h3>P2C Summit '24 Retreat</h3>
+        <img class="activator" src="img/Canoe.jpg"
+        width="600"
+        height="400">
+        <h3>My Christmas Tree</h3>
+        <img class="activator" src="img/christmas.png"
+        width="400"
+        height="500">
+        <h3>Yummy Katsudon</h3>
+        <img class="activator" src="img/Food.png"
+        width="400"
+        height="500">
+
+    <h2>Contact and Socials</h2>
+    <ul>
+        <li><b>Email:</b> uxkanashiro@gmail.com</li>
+        <li><b>LinkedIn:</b> Kaya Kanashiro</li>
+        <li><b>Instagram:</b> @k.shiro_</li>
+        <li><b>Youtube:</b> @kayakanashiro</li>
+    </ul>
+    <p></p>
+</body>
+
+<footer>
+    &copy; Kaya Kanashiro <x-year></x-year>
+</footer>
